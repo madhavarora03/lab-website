@@ -1,14 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug";
-
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-
-const last_posts = posts.slice(0, 3);
+import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -17,24 +10,130 @@ const last_posts = posts.slice(0, 3);
     <div class="text-5xl font-bold">I'm Dr. Ankur Gupta</div>
     <div class="text-3xl py-3 font-bold">Assistant Professor at NSUT</div>
     <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal
-        Portfolio Website built with Astro and TailwindCSS. Create in minutes a website
-        with Blog, CV, Project Section, Store and RSS Feed. I hope you find it useful!
-      </text>
+      <text class="text-lg"> I'm a Assistant Professor at NSUT. </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank">
-        Let's connect!</a
-      >
       <a
-        href="https://github.com/manuelernestog/astrofy"
+        class="btn"
+        href="https://www.linkedin.com/in/ankursynon/"
         target="_blank"
-        class="btn btn-outline ml-5"
       >
-        Get This template
+        Let's connect!
       </a>
     </div>
+  </div>
+
+  <!-- Carousel -->
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Carousel</div>
+  </div>
+
+  <div class="py-5">
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-6">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10 px-4">
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10 px-4">
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident.
+    </TimeLineElement>
   </div>
 
   <div>
@@ -63,24 +162,4 @@ const last_posts = posts.slice(0, 3);
     url="#"
     badge="FOSS"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
