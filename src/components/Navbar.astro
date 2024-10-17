@@ -1,6 +1,6 @@
 ---
 const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-base-300"; // For primary color replace with `active` class
+const activeClass = "bg-base-300";
 ---
 
 <div class="navbar bg-base-100">
@@ -41,8 +41,8 @@ const activeClass = "bg-base-300"; // For primary color replace with `active` cl
       <li><a id="contact" href="/contact">Contact</a></li>
     </ul>
   </div>
-  <div class="navbar-end gap-4">
-    <button class="btn btn-active btn-ghost">
+  <div class="navbar-end gap-2">
+    <button class="btn btn-square btn-active btn-ghost">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5em"
@@ -54,7 +54,7 @@ const activeClass = "bg-base-300"; // For primary color replace with `active` cl
         ></path></svg
       >
     </button>
-    <button class="btn btn-active btn-ghost">
+    <button class="btn btn-square btn-active btn-ghost">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5em"
