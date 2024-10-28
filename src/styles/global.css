@@ -1,3 +1,7 @@
-.time-line-container>div:last-child .education__time>.education__line {
-    display: none;
+.time-line-container > div:last-child .education__time > .education__line {
+  display: none;
+}
+
+.h1 {
+  @apply text-4xl font-extrabold text-neutral py-4;
 }

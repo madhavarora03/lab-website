@@ -1,9 +1,9 @@
 ---
 const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-base-300";
+const activeClass = "";
 ---
 
-<div class="navbar bg-base-100">
+<div class="navbar bg-neutral text-neutral-content fixed z-[100]">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -23,26 +23,28 @@ const activeClass = "bg-base-300";
       </div>
       <ul
         tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral"
       >
         <li><a href="/" id="home">Home</a></li>
-        <!-- <li><a href="/cv" id="cv">CV</a></li>
-        <li><a href="/teaching" id="teaching">Teaching</a></li>
-        <li><a href="/contact" id="contact">Contact</a></li> -->
+        <li><a href="/team" id="team">Team</a></li>
+        <li><a href="/teaching" id="teaching">Publications</a></li>
+        <li><a href="/contact" id="contact">News</a></li>
+        <li><a href="/contact" id="contact">Opening</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">Next Gen AI</a>
+    <a class="btn btn-ghost text-xl">NextGenAI</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a id="home" href="/">Home</a></li>
-      <li><a id="cv" href="/cv">CV</a></li>
-      <li><a id="teaching" href="/teaching">Teaching</a></li>
-      <li><a id="contact" href="/contact">Contact</a></li>
+      <li><a href="/" id="home">Home</a></li>
+      <li><a href="/team" id="team">Team</a></li>
+      <li><a href="/teaching" id="teaching">Publications</a></li>
+      <li><a href="/contact" id="contact">News</a></li>
+      <li><a href="/contact" id="contact">Opening</a></li>
     </ul>
   </div>
   <div class="navbar-end gap-2">
-    <button class="btn btn-square btn-active btn-ghost">
+    <button class="btn btn-square btn-ghost">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5em"
@@ -54,7 +56,7 @@ const activeClass = "bg-base-300";
         ></path></svg
       >
     </button>
-    <button class="btn btn-square btn-active btn-ghost">
+    <button class="btn btn-square btn-ghost">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5em"
