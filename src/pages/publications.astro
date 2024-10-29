@@ -1,0 +1,171 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <h1 class="text-3xl font-bold mb-6">Publications</h1>
+
+  <div
+    class="collapse collapse-arrow bg-base-200 mb-4 w-full border border-gray-300 rounded-lg shadow-md"
+  >
+    <input type="checkbox" id="journal" class="hidden" />
+    <label
+      for="journal"
+      class="collapse-title text-xl font-medium px-4 py-3 cursor-pointer w-full"
+    >
+      Journal Publications
+    </label>
+    <div class="collapse-content px-4 py-2 border-t border-gray-300">
+      <div
+        class="collapse collapse-arrow bg-base-200 mb-2 border border-gray-300 rounded-lg shadow-md"
+      >
+        <input type="checkbox" id="journal1" class="hidden" />
+        <label
+          for="journal1"
+          class="collapse-title text-lg font-semibold px-4 py-2 cursor-pointer"
+        >
+          Title: AI and Medicine
+        </label>
+        <div class="collapse-content px-4 py-2 border-t border-gray-300">
+          <p><strong>Authors:</strong> Dr. Ankur Gupta, John Doe</p>
+          <p>
+            <strong>Published In:</strong> International Journal of AI in Healthcare
+          </p>
+          <p>
+            <strong>Description:</strong> This study explores the impact of AI in
+            enhancing diagnostic accuracy and patient outcomes.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="collapse collapse-arrow bg-base-200 mb-2 border border-gray-300 rounded-lg shadow-md"
+      >
+        <input type="checkbox" id="journal2" class="hidden" />
+        <label
+          for="journal2"
+          class="collapse-title text-lg font-semibold px-4 py-2 cursor-pointer"
+        >
+          Title: Machine Learning in Healthcare
+        </label>
+        <div class="collapse-content px-4 py-2 border-t border-gray-300">
+          <p><strong>Authors:</strong> Dr. Alice Smith, Dr. Ankur Gupta</p>
+          <p><strong>Published In:</strong> Journal of Medical Systems</p>
+          <p>
+            <strong>Description:</strong> Discusses the integration of machine learning
+            technologies in clinical practices to improve patient outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="collapse collapse-arrow bg-base-200 mb-4 w-full border border-gray-300 rounded-lg shadow-md"
+  >
+    <input type="checkbox" id="conference" class="hidden" />
+    <label
+      for="conference"
+      class="collapse-title text-xl font-medium px-4 py-3 cursor-pointer w-full"
+    >
+      Conference Publications
+    </label>
+    <div class="collapse-content px-4 py-2 border-t border-gray-300">
+      <div
+        class="collapse collapse-arrow bg-base-200 mb-2 border border-gray-300 rounded-lg shadow-md"
+      >
+        <input type="checkbox" id="conference1" class="hidden" />
+        <label
+          for="conference1"
+          class="collapse-title text-lg font-semibold px-4 py-2 cursor-pointer"
+        >
+          Title: Advances in ML
+        </label>
+        <div class="collapse-content px-4 py-2 border-t border-gray-300">
+          <p><strong>Authors:</strong> Jane Smith, Dr. Ankur Gupta</p>
+          <p><strong>Conference:</strong> IEEE ML Conference 2023</p>
+          <p>
+            <strong>Description:</strong> Discusses recent advancements in machine
+            learning algorithms for large datasets.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="collapse collapse-arrow bg-base-200 mb-2 border border-gray-300 rounded-lg shadow-md"
+      >
+        <input type="checkbox" id="conference2" class="hidden" />
+        <label
+          for="conference2"
+          class="collapse-title text-lg font-semibold px-4 py-2 cursor-pointer"
+        >
+          Title: Deep Learning Techniques
+        </label>
+        <div class="collapse-content px-4 py-2 border-t border-gray-300">
+          <p><strong>Authors:</strong> John Doe, Dr. Ankur Gupta</p>
+          <p>
+            <strong>Conference:</strong> International Conference on Deep Learning
+            2024
+          </p>
+          <p>
+            <strong>Description:</strong> Analyzes the impact of deep learning methodologies
+            in diverse fields.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="collapse collapse-arrow bg-base-200 mb-4 w-full border border-gray-300 rounded-lg shadow-md"
+  >
+    <input type="checkbox" id="book" class="hidden" />
+    <label
+      for="book"
+      class="collapse-title text-xl font-medium px-4 py-3 cursor-pointer w-full"
+    >
+      Book Chapters
+    </label>
+    <div class="collapse-content px-4 py-2 border-t border-gray-300">
+      <div
+        class="collapse collapse-arrow bg-base-200 mb-2 border border-gray-300 rounded-lg shadow-md"
+      >
+        <input type="checkbox" id="book1" class="hidden" />
+        <label
+          for="book1"
+          class="collapse-title text-lg font-semibold px-4 py-2 cursor-pointer"
+        >
+          Title: AI in Public Health
+        </label>
+        <div class="collapse-content px-4 py-2 border-t border-gray-300">
+          <p><strong>Authors:</strong> Alex Johnson, Dr. Ankur Gupta</p>
+          <p><strong>Book Title:</strong> Innovations in AI for Healthcare</p>
+          <p>
+            <strong>Description:</strong> Explores the application of AI technologies
+            in improving public health systems.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="collapse collapse-arrow bg-base-200 mb-2 border border-gray-300 rounded-lg shadow-md"
+      >
+        <input type="checkbox" id="book2" class="hidden" />
+        <label
+          for="book2"
+          class="collapse-title text-lg font-semibold px-4 py-2 cursor-pointer"
+        >
+          Title: The Future of AI
+        </label>
+        <div class="collapse-content px-4 py-2 border-t border-gray-300">
+          <p><strong>Authors:</strong> Lisa White, Dr. Ankur Gupta</p>
+          <p><strong>Book Title:</strong> Future Trends in Technology</p>
+          <p>
+            <strong>Description:</strong> Discusses potential advancements in AI
+            and its implications for various industries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

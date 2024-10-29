@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
+//import Card from "../components/Card.astro";
 ---
 
 <BaseLayout>
-  <h1 class="text-3xl font-bold mb-6">Our Family</h1>
-
+  <h1 class="text-3xl font-bold mb-6 align-text-top">Our Family</h1>
+  <h2 class="text-2xl font-bold ml-2">Convenor</h2>
   <div class="flex items-start mb-8">
-    <div class="w-64 rounded-full mr-4">
+    <div class="w-80 rounded-full mr-4">
       <img
         src="/profile.jpeg"
         alt="Dr. Ankur Gupta"
@@ -16,7 +16,9 @@ import Card from "../components/Card.astro";
     </div>
 
     <div>
-      <h2 class="text-2xl py-2">Dr. Ankur Gupta</h2>
+      <div class="space-y-0.1">
+        <h2 class="text-2xl font-bold">Dr. Ankur Gupta</h2>
+      </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea officiis,
         suscipit totam iusto, excepturi dolor consequatur, cumque nam veniam
@@ -25,6 +27,8 @@ import Card from "../components/Card.astro";
         fugiat quos exercitationem, odit saepe veniam omnis deserunt quaerat
         consectetur dolores!
       </p>
+      <h3 class="font-bold">Email</h3>
+      <p>abc@gmail.com</p>
     </div>
   </div>
 
@@ -33,9 +37,9 @@ import Card from "../components/Card.astro";
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
     <!-- Row 1 -->
     <div class="flex flex-col">
-      <h3 class="text-xl font-bold mb-2">PhD Members</h3>
+      <h3 class="text-xl font-bold mb-2">PhD</h3>
       <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Mohd. Imran"
@@ -51,9 +55,8 @@ import Card from "../components/Card.astro";
           </p>
         </div>
       </div>
-
       <div class="flex items-start bg-white shadow-md rounded-lg p-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Jane Doe"
@@ -72,9 +75,9 @@ import Card from "../components/Card.astro";
     </div>
 
     <div class="flex flex-col">
-      <h3 class="text-xl font-bold mb-2">M.Tech Members</h3>
+      <h3 class="text-xl font-bold mb-2">M.Tech</h3>
       <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 h-24 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="MTech Student"
@@ -90,9 +93,8 @@ import Card from "../components/Card.astro";
           </p>
         </div>
       </div>
-
       <div class="flex items-start bg-white shadow-md rounded-lg p-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Sara Lee"
@@ -112,9 +114,9 @@ import Card from "../components/Card.astro";
 
     <!-- Row 2 -->
     <div class="flex flex-col">
-      <h3 class="text-xl font-bold mb-2">Assistants</h3>
+      <h3 class="text-xl font-bold mb-2">Research Assistants</h3>
       <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Assistant Name"
@@ -130,9 +132,8 @@ import Card from "../components/Card.astro";
           </p>
         </div>
       </div>
-
       <div class="flex items-start bg-white shadow-md rounded-lg p-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Emily White"
@@ -153,7 +154,7 @@ import Card from "../components/Card.astro";
     <div class="flex flex-col">
       <h3 class="text-xl font-bold mb-2">Interns</h3>
       <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Intern Name"
@@ -169,9 +170,8 @@ import Card from "../components/Card.astro";
           </p>
         </div>
       </div>
-
       <div class="flex items-start bg-white shadow-md rounded-lg p-4">
-        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+        <div class="w-48 rounded-full overflow-hidden mr-4">
           <img
             src="/profile.jpeg"
             alt="Laura Green"
@@ -184,6 +184,81 @@ import Card from "../components/Card.astro";
           <p class="mt-2">
             Studying computer science with a focus on software development.
             Excited to gain hands-on experience in the field.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold py-10">Projects</h2>
+  <div class="space-y-4">
+    <div
+      class="collapse collapse-arrow bg-base-200 border border-gray-300 rounded-lg shadow-md"
+    >
+      <input type="checkbox" id="project1" class="hidden" />
+      <label
+        for="project1"
+        class="collapse-title text-xl font-medium px-4 py-3 cursor-pointer"
+      >
+        Project-1
+      </label>
+      <div class="collapse-content px-4 py-2 border-t border-gray-300">
+        <div class="p-4 bg-white rounded-lg shadow-md w-full">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            tempora, earum quos distinctio incidunt vero voluptates repellat
+            omnis officiis dolorum corporis in impedit rerum error adipisci,
+            labore, recusandae quasi laborum consectetur aliquam? Culpa cum
+            reprehenderit autem iusto? Vero architecto quis natus eum in ex
+            dicta ab id. Aliquam, quae nemo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="collapse collapse-arrow bg-base-200 border border-gray-300 rounded-lg shadow-md"
+    >
+      <input type="checkbox" id="project2" class="hidden" />
+      <label
+        for="project2"
+        class="collapse-title text-xl font-medium px-4 py-3 cursor-pointer"
+      >
+        Project-2
+      </label>
+      <div class="collapse-content px-4 py-2 border-t border-gray-300">
+        <div class="p-4 bg-white rounded-lg shadow-md w-full">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+            aliquid temporibus, harum, quam sint quisquam ut ad praesentium
+            facere enim, officia optio porro. Omnis, a eos odit dolor eius
+            debitis commodi nemo molestiae dignissimos iste. Fugit, aspernatur
+            quam est saepe et vero rem natus. Quod id nostrum explicabo tenetur
+            hic.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="collapse collapse-arrow bg-base-200 border border-gray-300 rounded-lg shadow-md"
+    >
+      <input type="checkbox" id="project3" class="hidden" />
+      <label
+        for="project3"
+        class="collapse-title text-xl font-medium px-4 py-3 cursor-pointer"
+      >
+        Project-3
+      </label>
+      <div class="collapse-content px-4 py-2 border-t border-gray-300">
+        <div class="p-4 bg-white rounded-lg shadow-md w-full">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro
+            asperiores quas voluptate quia molestiae, aliquam iusto dolore eos
+            repellendus. Necessitatibus aliquam repellendus quasi, ducimus
+            facere minus voluptatibus repudiandae et deserunt fuga dolor? Ex
+            ratione magni a voluptates quaerat voluptas dolorem, maxime quae
+            soluta molestias impedit architecto veniam nostrum corporis?
           </p>
         </div>
       </div>
