@@ -1,0 +1,192 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+---
+
+<BaseLayout>
+  <h1 class="text-3xl font-bold mb-6">Our Family</h1>
+
+  <div class="flex items-start mb-8">
+    <div class="w-64 rounded-full mr-4">
+      <img
+        src="/profile.jpeg"
+        alt="Dr. Ankur Gupta"
+        class="w-full h-full rounded-full object-cover"
+      />
+    </div>
+
+    <div>
+      <h2 class="text-2xl py-2">Dr. Ankur Gupta</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea officiis,
+        suscipit totam iusto, excepturi dolor consequatur, cumque nam veniam
+        impedit quia libero fugiat! Nobis, vel consequuntur! Doloribus pariatur
+        quia iste rem cumque accusantium ducimus adipisci expedita natus rerum
+        fugiat quos exercitationem, odit saepe veniam omnis deserunt quaerat
+        consectetur dolores!
+      </p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">Current Members</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+    <!-- Row 1 -->
+    <div class="flex flex-col">
+      <h3 class="text-xl font-bold mb-2">PhD Members</h3>
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Mohd. Imran"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Mohd. Imran</h4>
+          <p class="text-gray-600">PhD</p>
+          <p class="mt-2">
+            Research on machine learning applications in healthcare. Passionate
+            about AI and its impact on society.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Jane Doe"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Jane Doe</h4>
+          <p class="text-gray-600">PhD</p>
+          <p class="mt-2">
+            Focused on natural language processing and its applications in
+            education. Enthusiastic about data science.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <h3 class="text-xl font-bold mb-2">M.Tech Members</h3>
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="MTech Student"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Ali Khan</h4>
+          <p class="text-gray-600">MTech</p>
+          <p class="mt-2">
+            Specializing in cybersecurity and network protocols. Interested in
+            ethical hacking and information security.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Sara Lee"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Sara Lee</h4>
+          <p class="text-gray-600">MTech</p>
+          <p class="mt-2">
+            Focused on data analytics and visualization. Loves working with big
+            data and creating insightful reports.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="flex flex-col">
+      <h3 class="text-xl font-bold mb-2">Assistants</h3>
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Assistant Name"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">John Smith</h4>
+          <p class="text-gray-600">Assistant</p>
+          <p class="mt-2">
+            Provides administrative support and assists in research projects.
+            Enjoys problem-solving and team collaboration.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Emily White"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Emily White</h4>
+          <p class="text-gray-600">Assistant</p>
+          <p class="mt-2">
+            Expert in project management and communication. Passionate about
+            helping teams achieve their goals.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <h3 class="text-xl font-bold mb-2">Interns</h3>
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4 mb-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Intern Name"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Michael Brown</h4>
+          <p class="text-gray-600">Intern</p>
+          <p class="mt-2">
+            Currently exploring AI and machine learning technologies. Eager to
+            learn and contribute to innovative projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start bg-white shadow-md rounded-lg p-4">
+        <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
+          <img
+            src="/profile.jpeg"
+            alt="Laura Green"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Laura Green</h4>
+          <p class="text-gray-600">Intern</p>
+          <p class="mt-2">
+            Studying computer science with a focus on software development.
+            Excited to gain hands-on experience in the field.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
